@@ -1,0 +1,398 @@
+ <!DOCTYPE html>
+ <html lang="en" dir="ltr">
+
+
+ <head>
+   <meta charset="utf-8">
+   <title>Contact Us</title>
+   <link rel="stylesheet" href="contactUs.css">
+   <link rel="icon" href="images/favicon.ico">
+   <link rel="preconnect" href="https://fonts.gstatic.com">
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@100&family=Sacramento&display=swap" rel="stylesheet">
+
+   <!-- Font awesome -->
+   <script src="https://kit.fontawesome.com/74a063bb38.js" crossorigin="anonymous"></script>
+ </head>
+
+ <body>
+
+   <style>
+     * {
+       margin: 0;
+
+     }
+
+     body {
+       font-family: 'Merriweather', serif;
+       background-color: #ccf2f4;
+       text-align: center;
+     }
+
+     a {
+       color: #11999E;
+       margin: 10px 20px;
+       text-decoration: none;
+     }
+
+
+     a:hover {
+       color: #EAF6F6;
+     }
+
+     p {
+       color: #444;
+     }
+
+     h1 {
+       font-family: 'Sacramento', cursive;
+       text-align: center;
+       font-size: 2em;
+       color: #66BFBF;
+     }
+
+     h2 {
+       font-family: 'Montserrat', sans-serif;
+       font-weight: bold;
+       font-size: 2.45rem;
+       color: #66BFBF;
+     }
+
+     .container {
+       width: 80%;
+       margin: 0 auto;
+     }
+
+     header {
+       background: #F5F5F5;
+       width: auto;
+       height: 75px;
+     }
+
+     header::after {
+       content: '';
+       display: table;
+       clear: both;
+     }
+
+
+
+
+     nav ul {
+       margin: 0;
+       padding: 0;
+       list-style: none;
+
+     }
+
+     nav li {
+       display: inline-block;
+       margin-left: 70px;
+       padding-top: 25px;
+       position: relative;
+     }
+
+     nav a {
+       color: #444;
+       text-decoration: none;
+       text-transform: uppercase;
+       font-size: 14px;
+     }
+
+     nav a:hover {
+       color: #000;
+
+     }
+
+     nav a::before {
+       content: '';
+       display: block;
+       height: 5px;
+       background-color: #11999E;
+       position: absolute;
+       top: 0;
+       width: 0%;
+       transition: all ease-in-out 100ms;
+     }
+
+     nav a:hover::before {
+       width: 100%;
+     }
+
+     .box {
+       left: 50%;
+       top: 16%;
+       padding: 4%;
+       height: 70%;
+       width: 35%;
+       background-color: white;
+       position: absolute;
+       border-radius: 10px;
+       box-shadow: 5px 10px 10px black;
+     }
+
+     .topForm {
+       height: 6em;
+     }
+
+     .leftForm {
+       width: 40%;
+       float: left;
+     }
+
+     .rightForm {
+       padding-left: 60px;
+       width: 20%;
+       float: left;
+     }
+
+     .topForm input {
+       height: 2em;
+       width: 17em;
+       padding: 15px;
+       color: rgba(0, 0, 0, 0.6);
+     }
+
+     .bottomForm input {
+       height: 2em;
+       width: 38.7em;
+       padding: 15px;
+       color: rgba(0, 0, 0, 0.6);
+     }
+
+     .bottomForm button {
+       height: 4em;
+       width: 41em;
+       padding: 15px;
+       background-color: #9B72AA;
+       border-radius: 5px;
+     }
+
+     .box2 {
+       font-family: 'Sacramento', cursive;
+       top: 50%;
+       left: 5%;
+       position: absolute;
+       font-size: 65px;
+     }
+
+     .bottom-container {
+       background-color: #66BFBF;
+       padding: 50px 0 20px;
+       margin-top: 750px;
+     }
+
+     .copyright {
+       color: #EAF6F6;
+       font-size: 0.75rem;
+       padding: 20px 0;
+     }
+
+     .btn {
+       background: #11cdd4;
+       background-image: -webkit-linear-gradient(top, #11cdd4, #11999c);
+       background-image: -moz-linear-gradient(top, #11cdd4, #11999c);
+       background-image: -ms-linear-gradient(top, #11cdd4, #11999c);
+       background-image: -o-linear-gradient(top, #11cdd4, #11999c);
+       background-image: linear-gradient(to bottom, #11cdd4, #11999c);
+       -webkit-border-radius: 8;
+       -moz-border-radius: 8;
+       border-radius: 8px;
+       font-family: 'Montserrat', sans-serif;
+       color: #ffffff;
+       font-size: 20px;
+       padding: 10px 20px 10px 20px;
+       text-decoration: none;
+     }
+
+     .btn:hover {
+       background: #30e3cb;
+       background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+       background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+       background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+       background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+       background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+       text-decoration: none;
+     }
+
+     body {
+       background-color: #d1f3e7;
+     }
+
+     #title-Tag-Line {
+       font-size: 20px;
+     }
+
+
+     /* form animation starts */
+     .form {
+       background: #fff;
+       box-shadow: 0 30px 60px 0 rgba(90, 116, 148, 0.4);
+       border-radius: 5px;
+       max-width: 480px;
+       margin-left: auto;
+       margin-right: auto;
+       margin-top: 50px;
+       padding-top: 5px;
+       padding-bottom: 5px;
+       left: 0;
+       right: 0;
+       position: absolute;
+       border-top: 5px solid #0e3721;
+       /*   z-index: 1; */
+       animation: bounce 1.5s infinite;
+     }
+
+     ::-webkit-input-placeholder {
+       font-size: 1.3em;
+     }
+
+     .title {
+       display: block;
+       font-family: sans-serif;
+       margin: 10px auto 5px;
+       width: 300px;
+     }
+
+     .termsConditions {
+       margin: 0 auto 5px 80px;
+     }
+
+     .pageTitle {
+       font-size: 2em;
+       font-weight: bold;
+     }
+
+     .secondaryTitle {
+       color: grey;
+     }
+
+     .name {
+       background-color: #ebebeb;
+       color: black;
+     }
+
+     .name:hover {
+       border-bottom: 5px solid #0e3721;
+       height: 30px;
+       width: 380px;
+       transition: ease 0.5s;
+     }
+
+     .email {
+       background-color: #ebebeb;
+       height: 2em;
+     }
+
+     .email:hover {
+       border-bottom: 5px solid #0e3721;
+       height: 30px;
+       width: 380px;
+       transition: ease 0.5s;
+     }
+
+     .message {
+       background-color: #ebebeb;
+       overflow: hidden;
+       height: 10rem;
+     }
+
+     .message:hover {
+       border-bottom: 5px solid #0e3721;
+       height: 12em;
+       width: 380px;
+       transition: ease 0.5s;
+     }
+
+     .formEntry {
+       display: block;
+       margin: 30px auto;
+       min-width: 300px;
+       padding: 10px;
+       border-radius: 2px;
+       border: none;
+       transition: all 0.5s ease 0s;
+     }
+
+     .submit {
+       width: 200px;
+       color: white;
+       background-color: #0e3721;
+       font-size: 20px;
+     }
+
+     .submit:hover {
+       box-shadow: 15px 15px 15px 5px rgba(78, 72, 77, 0.219);
+       transform: translateY(-3px);
+       width: 300px;
+       border-top: 5px solid #0e3750;
+       border-radius: 0%;
+     }
+
+     @keyframes bounce {
+       0% {
+         tranform: translate(0, 4px);
+       }
+
+       50% {
+         transform: translate(0, 8px);
+       }
+     }
+   </style>
+   <!------------------------Nav Bar -------------------->
+
+   <header>
+     <div class="container">
+       <!--navigation bar-->
+       <!--<a href="index.html">
+   					<img src="images/pharmaCure_black.png"   alt="logo" class="logo" >
+   				</a>-->
+
+       <nav>
+         <ul>
+           <li><a href="index.html">Home</a></li>
+           <li><a href="AboutUs.html">AboutUs</a></li>
+           <li><a href="contactUs.html">ContactUs</a></li>
+           <li><a href="OurProjects.html">Our Work</a></li>
+           <!--<li><a href="retrievefeedback.php">feedback</a></li>
+   						<li><a href="login/index.php">Login/SignUp</a></li>-->
+
+         </ul>
+       </nav>
+     </div>
+     <!--navigation bar-->
+   </header>
+
+
+
+   <!------------------------- Contact Us left --------------->
+   <!-- <div class="box2">
+     <h1>Contact Us</h1>
+   </div> -->
+
+
+   <!------------------------Right Content -------------------->
+   <div class="wrapper">
+     <form class="form">
+       <div class="pageTitle title">Contact Us</div>
+       <div class="secondaryTitle title">Say Hello!</div>
+       <input type="text" class="name formEntry" placeholder="Name" />
+       <input type="text" class="email formEntry" placeholder="Email" />
+       <textarea class="message formEntry" placeholder="Message"></textarea>
+       <input type="checkbox" class="termsConditions" value="Term" style="margin-left: 5px;">
+       <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> & <span style="color: #0e3721">Privacy Policy</span>.</label><br>
+       <button class="submit formEntry" onclick="thanks()">Submit</button>
+     </form>
+   </div>
+   <script src="app.js"></script>
+
+   <div class="bottom-container">
+     <center>
+       <a class="footer-link" href="#"><i class="fab fa-linkedin fa-2x"></i></a> <a class="footer-link" href="#"><i class="fab fa-twitter fa-2x"></i></a> <a class="footer-link" href="#"><i class="fab fa-instagram fa-2x"></i></a>
+     </center>
+     <h5 class="copyright">&copy; 2021 Web tech.</h5>
+   </div>
+
+
+ </body>
+
+ </html>
